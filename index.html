@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+    <header class="text-white text-center py-4" style="background-color: rgb(61, 175, 80)">
+        <a href="index.html" style="text-decoration: none; color:rgb(255, 255, 255)">
+            <h1 style="font-size: 60px;"><strong>BCCbet</strong></h1>
+        </a>
+    </header>
+
+    <div class="bg-success d-flex justify-content-center align-items-center py-2">
+        <p class="text-white mb-0 me-2"><strong>Saldo:</strong> R$ </p> <p id="carteira" class="text-white mb-0 me-2"></p>
+        <a href="src/html/depositar.html" class="btn btn-outline-light py-1">Depositar</a>  
+    </div>
+    
+    <hr class="mt-0 border border-light">
+
+    <main class="container my-5">
+        <h2 class="text-light">Bem-vindo(a) ao <strong>BCCbet</strong>!</h2>
+        <p class="text-light">Escolha uma das opções abaixo para se divertir apostando!</p>
+        
+        <div class="row">
+            <div class="col-md-12 mb-4 my-5">
+                <div class="card mx-auto" style="max-width: 600px;">
+                    <div class="card-body">
+                        <h5>Snoopy Coin</h5>
+                        <p>Aposte em qual dos lados da moeda o Snoopy vai virar para ganhar!</p>
+                        <a href="src/html/snoopycoin.html" class="btn btn-success btn-block">Comece a ganhar!</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 mb-4 my-5">
+                <div class="card mx-auto" style="max-width: 600px;">
+                    <div class="card-body">
+                        <h5>Snoopy Cards</h5>
+                        <p>Aposte nas cartas que o Snoopy escolhe para ganhar!</p>
+                        <a href="src/html/cartas.html" class="btn btn-success btn-block">Comece a ganhar!</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 mb-4 my-5">
+                <div class="card mx-auto" style="max-width: 600px;">
+                    <div class="card-body">
+                        <h5>Bombas</h5>
+                        <p>Escolha quais áreas não possuem bombas para ganhar!</p>
+                        <a href="src/html/mine.html" class="btn btn-success btn-block">Comece a ganhar!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-white text-center py-3" style="background-color: rgb(61, 175, 80)">
+        <p>Direitos Reservados &copy; 2024 BCCbet - Web Front End</p>
+    </footer>
+    
+    <script src="src/javascript/carteira.js"></script>
+</body>
+</html>

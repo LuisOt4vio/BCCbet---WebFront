@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Adivinhação de Cartas</title>
+    <link rel="stylesheet" href="../bootstrap/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../css/estiloCartas.css">
+</head>
+<body>
+    <header class="text-white text-center py-4" style="background-color: rgb(61, 175, 80)">
+        <a href="../../index.html" style="text-decoration: none; color:rgb(255, 255, 255)">
+            <h1 style="font-size: 60px;"><strong>BCCbet</strong></h1>
+        </a>
+    </header>
+    <div class="bg-success d-flex justify-content-center align-items-center py-2">
+        <p class="text-white mb-0 me-2"><strong>Saldo:</strong> R$ </p> <p id="carteira" class="text-white mb-0 me-2"></p>
+        <a href="depositar.html" class="btn btn-outline-light py-1">Depositar</a>  
+    </div>
+    <hr class="mt-0 border border-light">
+  <main>
+    <div class="carta-wrapper">
+        <div id="carta" class="carta">
+            <div class="front">
+                <img id="cartaFrontImage" src="../../imagens/Images/interrogacao.png" alt="Frente da carta">
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="container" style="background-color:rgba(53, 53, 53, 0.76);">
+        <h1>Jogo de Adivinhação de Cartas</h1>
+        <p>Aposte um valor:</p><br>
+        <div>
+            <input id="valorAposta" type="number" placeholder="R$" min="0.1">&nbsp &nbsp
+            <br><br>
+            <p>Advinhe o naipe da carta!</p>
+            <div id="escolhas" class="choices">
+                <img src="../../imagens/Images/naipe1.png" alt="Copas" data-value="Copas" class= "choice">
+                <img src="../../imagens/Images/naipes2.png" alt="Espadas" data-value="Espadas" class="choice">
+                <img src="../../imagens/Images/naipes4.png" alt="Ouros" data-value="Ouros" class="choice">
+                <img src="../../imagens/Images/naipes3.png" alt="Paus" data-value="Paus" class="choice">
+            </div>
+         </div>
+        <button id="guessBtn"><strong>Adivinhar</strong></button>
+        <div id="result"></div>
+        <br>
+        <p id="resultado"></p>
+    </div>
+    </main>
+    <footer class="text-white text-center py-3" style="background-color: rgb(61, 175, 80)">
+        <p>Direitos Reservados &copy; 2024 BCCbet - Web Front End</p>
+    </footer>
+    <script src="../javascript/carteira.js"></script>
+    <script src="../javascript/cartas.js"></script>
+</body>
+</html>

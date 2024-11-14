@@ -1,0 +1,25 @@
+html, body{
+    background-color: rgb(31, 31, 31);
+}
+
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer{
+    background-color: #327a2f;
+}
+
+h1, h2{
+    margin: 0;
+}
+
+.card{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer{
+    margin-top: 50px;
+}

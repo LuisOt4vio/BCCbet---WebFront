@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+html, body{
+    background-color: rgb(31, 31, 31);
+}
+
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer{
+    background-color: #327a2f;
+}
+
+h1, h2{
+    margin: 0;
+}
+
+
+
+footer{
+    margin-top: 50px;
+}
+
+
+main{
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    padding-left: 10%; 
+    padding-right: 10%; 
+    
+    justify-content: center;
+    align-items: center;
+     display: flex;
+    margin: 0;
+  
+}
+
+
+.container {
+    margin-left: 10%;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(59, 59, 59, 0.363);
+    padding: 20px;
+    color: #fff;
+   
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.choices {
+    
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.choices .choice {border-radius: 10%;
+    width: 100px; 
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+
+.choices .choice {
+    width: 80px;
+    height: 80px;
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.choices .choice:hover {
+    transform: scale(1.2);
+}
+
+.choices .choice.selected {
+    
+    
+   
+    filter: brightness(120%);border-color: #e6fd18;
+}
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #faf61d;
+    box-shadow: #e6fd18;
+    color: rgb(20, 19, 19);
+    border: none;
+    border-radius: 5px;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1); 
+    }
+    50% {
+        transform: scale(1.1); 
+    }
+    100% {
+        transform: scale(1); 
+    }
+}
+
+#cartaFrontImage{
+    margin-top: 50px;
+    padding: 10px 20px;
+    height: 650px;
+   animation: pulse1 1.5s infinite;
+}
+
+
+@keyframes pulse1 {
+    0% {
+        transform: scale(1); 
+    }
+    50% {
+        transform: scale(1.1); 
+    }
+    100% {
+        transform: scale(1); 
+    }
+}
+
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.carta-wrapper {
+    perspective: 1000px;
+}
+
+
+.carta img {
+    width: 420px;
+    height: 720px;
+    backface-visibility: hidden;
+    position: absolute;
+   
+    top: 0;
+    left: 0;
+}
+
+.carta.flip img {
+    transform: rotateY(180deg);
+}
+
+.carta .front, .carta .back {
+    position: absolute;
+    width: 420px;
+    height: 720px;
+    backface-visibility: hidden;
+    transition: transform 1s;
+}
+
+.carta .back {
+    transform: rotateY(180deg);
+}.carta-wrapper {
+    perspective: 1000px;
+}
+
+.carta {
+    position: relative;
+    width: 420px; 
+    height: 720px; 
+    margin-top: 20px;
+    display: inline-block;
+    transition: transform 1s;
+  
+}
+
+.carta.flip {
+    transform: rotateY(180deg);
+}
+
+.carta .front, .carta .back {
+    position: absolute;
+    width: 420px;
+    height: 720px;
+    backface-visibility: hidden;
+}
+
+.carta .front {
+    z-index: 2;
+    transform: rotateY(0deg);
+}
+
+.carta .back {
+    transform: rotateY(180deg);
+}
+
+
+
+#guessBtn {
+   align-items: center;
+}

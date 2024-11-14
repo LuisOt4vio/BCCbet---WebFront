@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="text-white text-center py-4" style="background-color: rgb(61, 175, 80)">
+        <a href="../../index.html" style="text-decoration: none; color:rgb(255, 255, 255)">
+            <h1 style="font-size: 60px;"><strong>BCCbet</strong></h1>
+        </a>
+    </header>
+    <div class="bg-success d-flex justify-content-center align-items-center py-2">
+        <p class="text-white mb-0 me-2"><strong>Saldo:</strong> R$ </p> <p id="carteira" class="text-white mb-0 me-2"></p>
+        <a href="depositar.html" class="btn btn-outline-light py-1">Depositar</a>  
+    </div>
+    <hr class="mt-0 border border-light">
+    <main class="container my-5">
+        <div class="row">
+            <div class="card mx-auto bg-dark" style="max-width: 1000px;">
+                <div class="card-body">
+                    <h1 class="text-center text-light"><strong>SNOOPY COIN</strong></h1>
+                    <br>
+                    <h6 class="text-center text-secondary">O carro chefe da <strong>BCCbet</strong>, é jogado uma moeda. O jogador aposta no resultado desta jogada.</h6>
+                    <br>
+                    <img class="mx-auto" id="gifInicio" src="../../imagens/snoopy aparecendo.gif" style="display: block;">
+                    <img class="mx-auto" id="gifMoeda" src="../../imagens/snoopy moeda.gif" style="display: none;">
+                    <br>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <input id="valorAposta" type="number" placeholder="R$" min="0.1">&nbsp &nbsp
+                        <button id="botaoCara" class="btn btn-outline-light">Apostar em <strong>cara</strong></button>&nbsp &nbsp
+                        <button id="botaoCoroa" class="btn btn-outline-light">Apostar em <strong>coroa</strong></button>
+                    </div>
+                    <p id="resultado" class="text-center text-light mt-3"></p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="text-white text-center py-3"  style="background-color: rgb(61, 175, 80)">
+        <p>Direitos Reservados &copy; 2024 BCCbet - Web Front End</p>
+    </footer>
+    <script src="../javascript/carteira.js"></script>
+    <script src="../javascript/moeda.js"></script>
+</body>
+</html>

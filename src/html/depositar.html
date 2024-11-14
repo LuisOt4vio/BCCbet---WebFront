@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="text-white text-center py-4" style="background-color: rgb(61, 175, 80)">
+        <a href="../../index.html" style="text-decoration: none; color:rgb(255, 255, 255)"><h1 style="font-size: 60px;"><strong>BCCbet</strong></h1></a>
+    </header>
+
+    <div class="bg-success d-flex justify-content-center align-items-center py-2">
+        <p class="text-white mb-0 me-2"><strong>Saldo:</strong> R$ </p> <p id="carteira" class="text-white mb-0 me-2"></p>
+        <a href="depositar.html" class="btn btn-outline-light py-1">Depositar</a>
+    </div>
+    <hr class="mt-0 border border-light">
+    <main class="container my-5">
+        <div class="row">
+            <div class="card mx-auto bg-dark" style="max-width: 1000px;">
+                <div class="card-body">
+                    <h1 class="text-center text-light"><strong>DEPOSITAR</strong></h1>
+                    <h6 class="text-center text-secondary">Deposite o valor que desejar. Lembre-se: apenas use o dinheiro que estiver sobrando, não faça dívidas.</h6>
+                    <p class="text-center text-danger">Valor mínimo de depósito é R$0.1 </p>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <input id="dinheiroDigitado" type="number" placeholder="R$" min="0.1">&nbsp &nbsp
+                        <button onclick="addDinheiro()" class="btn btn-outline-light">Depositar</button>
+                    </div>
+                </div>
+                <br><br><br><br>
+            </div>
+        </div>
+             <br><br>
+            <div class="row">
+                <div class="card mx-auto bg-dark" style="max-width: 1000px;">
+                    <div class="card-body">
+                        <h1 class="text-center text-light"><strong>SACAR</strong></h1>
+                        <p class="text-center text-danger">Limite máximo de saque é R$30.00</p>
+    
+                        <div class="d-flex justify-content-center align-items-center">
+                            <input id="dinheiroSaque" type="number" placeholder="R$" max="30">&nbsp &nbsp
+                            <button onclick="sacarDinheiro()" class="btn btn-outline-light">Sacar</button>
+                        </div>
+    
+                    </div>
+                    <br><br><br><br>
+                </div>
+            </div>
+    </main>
+    <footer class="text-white text-center py-3"  style="background-color: rgb(61, 175, 80); margin-top: 5%">
+        <p>Direitos Reservados &copy; 2024 BCCbet - Web Front End</p>
+    </footer>
+    <script src="../javascript/carteira.js"></script>
+</body>
+</html>
